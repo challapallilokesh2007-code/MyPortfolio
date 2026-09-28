@@ -290,9 +290,7 @@
         display: block;
       }
 
-      .dot-group span:nth-child(1) { background: #f87171; }
-      .dot-group span:nth-child(2) { background: #fbbf24; }
-      .dot-group span:nth-child(3) { background: #34d399; }
+      .dot-group span:nth-child(1) { background: #f87171; } .dot-group span:nth-child(2) { background: #fbbf24; } .dot-group span:nth-child(3) { background: #34d399; }
 
       .chip {
         padding: 8px 12px;
@@ -325,7 +323,7 @@
         align-items: end;
         justify-content: center;
         background-image: linear-gradient(180deg, rgba(56, 189, 248, 0.18), rgba(15, 23, 42, 0.2)),
-          url("image copy 2.png");
+          url("lokesh.png");
         background-size: cover;
         background-position: center top;
       }
@@ -742,7 +740,7 @@
                 </div>
 
                 <div class="profile-box">
-                  <div class="avatar"></div>
+                  <div class="avatar" role="img" aria-label="Lokesh profile picture"></div>
                 </div>
 
                 <div class="card-info">
@@ -865,12 +863,12 @@
     </main>
 
     <footer class="container footer">
-      <span>© 2026 Lokesh Portfolio</span>
+      <span>© <span id="currentYear">2026</span> Lokesh Portfolio</span>
       <span>Built with passion for web design</span>
     </footer>
 
     <script>
-      // Professional portfoloi without 3D effects.
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
